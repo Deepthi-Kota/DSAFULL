@@ -1,4 +1,5 @@
-package DAA.Day9;
+package DAA_Syllabus;
+//https://leetcode.com/problems/longest-common-prefix/description/
 /*Given an array of strings strs, find the longest common prefix among all strings.
 
 If there is no common prefix, return an empty string "".
