@@ -45,6 +45,7 @@ public class Ap13_Rearranging_Numbers {
             }
             mergeSort(arr,0,arr.length-1);
             System.out.println(Arrays.toString(arr));
+            sc.close();
             
         }
         static void mergeSort(int[] arr, int s, int e){
