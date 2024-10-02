@@ -115,5 +115,6 @@ public class p2_ {
         }
         int ans=call(arr,a,b);
         System.out.println(ans);
+        sc.close();
     }
 }
