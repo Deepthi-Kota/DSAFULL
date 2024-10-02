@@ -54,6 +54,66 @@ A truck capacity of 12 is the minimum to transport all the boxes in 4 days as fo
 3rd day: 9 (total weight: 9)
 4th day: 4 (total weight: 4)
  */
+import java.util.*;
 public class p2_ {
+    public static int bs(int arr[],int low,int high,int b)
+    {
+        int res=-1;
+        while(low<=high)
+        {
+            int mid=(low+high)/2;
+            int c=0;
+            int days=0;
+            for(int i=0;i<arr.length;i++)
+            {
+                c+=arr[i];
+                if(c>mid)
+                {
+                    days++;
+                    c=arr[i];
+                }
+            }
+            days++;
+            if(days<=b)
+            {
+                res=mid;
+                high=mid-1;
+            }
+            else
+            {
+                low=mid+1;
+            }
+        }
+        return res;
+    }
     
+    public static int call(int[] arr,int a,int b)
+    {
+        int low=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            low=Math.max(arr[i],low);
+        }
+        int high=0;
+        for(int i=0;i<a;i++)
+        {
+            high+=arr[i];
+        }
+        int from=bs(arr,low,high,b);
+        return from;
+    }
+    
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int[] arr= new int[a];
+        for(int i=0;i<a;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int ans=call(arr,a,b);
+        System.out.println(ans);
+    }
 }
