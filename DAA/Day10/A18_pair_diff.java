@@ -1,4 +1,5 @@
 package DAA.Day10;
+//https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/?envType=problem-list-v2&envId=binary-search
 /*Mr. Ram works in a manufacturing industry where items of different weights are produced. 
 His task is to find pairs of items whose weight difference is equal to a given value k. 
 You are asked to write a program to help Mr. Ram achieve this without using extra space.

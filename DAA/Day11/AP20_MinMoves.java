@@ -58,6 +58,19 @@ Sample Output-3:
 Explanation:
 All characters are already 'O', so no move is needed.
 Thus, the result is 0.*/
+import java.util.*;
 public class AP20_MinMoves {
-    
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s[] = sc.next().split("");
+        int c=0;
+        for(int i=0; i<s.length; i++){
+            if(s[i].equals("X")){
+                c++;
+                i+=2;
+            }
+        }
+        System.out.println(c);
+        sc.close();
+    }
 }
