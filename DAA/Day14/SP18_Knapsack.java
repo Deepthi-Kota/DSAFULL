@@ -72,30 +72,33 @@ Thus, the total value is 166.67*/
 import java.util.*;
 public class SP18_Knapsack {
     public static void main(String[] args){
-            Scanner sc = new Scanner(System.in);
-            int n=sc.nextInt();
-            int w = sc.nextInt();
-            int[][] arr = new int[n][2];
-            for(int i=0; i<n; i++){
-                arr[i][0]=sc.nextInt();
-                arr[i][1] = sc.nextInt();
-            }
-            System.out.format("%.2f",max(arr,w));
-            sc.close();
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int w = sc.nextInt();
+        int[][] arr = new int[n][2];
+        for(int i=0; i<n; i++){
+            arr[i][0]=sc.nextInt();
+            arr[i][1] = sc.nextInt();
         }
-        static double max(int[][] arr, int w){
-            double total = 0;
-            int i=0;
-            while(w>0){
-                if(w>arr[i][1]){
-                    total+=arr[i][0];
-                    w-=arr[i][1];
-                } else{
-                    total+=arr[i][0]/(arr[i][1]*1.0)*w;
-                    w-=w;
-                }
-                i++;
+        Arrays.sort(arr,(a,b)-> Double.compare(b[0]/b[1],a[0]/a[1]));
+        System.out.format("%.2f",max(arr,w));
+        sc.close();
+    }
+    static double max(int[][] arr, int w){
+        double total = 0;
+        for(int i=0; i<arr.length; i++){
+            int curwt = (int)arr[i][1];
+            int curval = (int)arr[i][0];
+            if(w - curwt >=0){
+                total+=curval;
+                w-= curwt;
+            } else{
+                double frac = ((double)w/(double)curwt);
+                total+=(curval*frac);
+                w=0;
+                break;
             }
-            return total;
         }
+        return total;
+    }
 }
