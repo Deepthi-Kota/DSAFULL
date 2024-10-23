@@ -68,6 +68,6 @@ public class Program{
             
             peplist.forEach(System.out::println);
         });
-        
+        sc.close();
     }
 }

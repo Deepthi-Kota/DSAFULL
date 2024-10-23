@@ -1,9 +1,6 @@
 package BT;
 
 import java.util.Scanner;
-
-import BT.BST.node;
-
 public class BinaryTree {
     public BinaryTree(){
 
