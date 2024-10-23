@@ -1,4 +1,3 @@
-package Pr
 /*
 You are required to build an Employee Management System that processes a list 
 of Employee objects to group them by their department and calculate the average 
