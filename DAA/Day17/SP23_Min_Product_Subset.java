@@ -54,7 +54,7 @@ Sample Output-3:
 -240
 Explanation: By choosing the subset {2, 3, 4, 5, -1, -2}, the minimum product is -240.*/
 import java.util.*;
-public class Min_Product_Subset{
+public class SP23_Min_Product_Subset{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
