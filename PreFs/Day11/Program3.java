@@ -1,3 +1,4 @@
+package PreFs.Day11;
 /*
 You are tasked with building a Student Score Management System that sorts 
 students based on their scores. Each student has multiple test scores: 
