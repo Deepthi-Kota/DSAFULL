@@ -130,5 +130,6 @@ public class AverageOfLevels
             ln.insert(root,Integer.parseInt(str[i]));
 
         System.out.println(sol.averageOfLevels(root));
+        sc.close();
     }
 }

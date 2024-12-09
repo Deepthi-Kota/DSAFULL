@@ -122,6 +122,7 @@ public class RightSideView
 
         Solution sol= new Solution();
         System.out.println(sol.rightSideView(root));
+        sc.close();
     }
 }
 

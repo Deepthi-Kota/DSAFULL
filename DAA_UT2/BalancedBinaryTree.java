@@ -127,5 +127,6 @@ public class BalancedBinaryTree
             ln.insert(root,Integer.parseInt(str[i]));
 
         System.out.println(sol.isBalanced(root));
+        sc.close();
     }
 }

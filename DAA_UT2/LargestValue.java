@@ -136,5 +136,6 @@ public class LargestValue
             ln.insert(root,Integer.parseInt(str[i]));
 
         System.out.println(sol.largestValues(root));
+        sc.close();
     }
 }

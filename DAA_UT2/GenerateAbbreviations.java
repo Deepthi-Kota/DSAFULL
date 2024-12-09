@@ -48,6 +48,7 @@ public class GenerateAbbreviations{
         call("",sb,s,ans);
         Collections.sort(ans);
         System.out.println(ans);
+        sc.close();
     }
     static void call(String p, String up, String s, List<String> ans){
         if(up.isEmpty()){
