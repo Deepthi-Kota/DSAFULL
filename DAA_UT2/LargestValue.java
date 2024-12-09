@@ -1,4 +1,3 @@
-package DAA.Day22;
 /* For X-Mas, santa claus is preparing a X-Mas Tree with set of Bulbs.
 The bulbs are of different voltages, and preparation of tree as follows:
     - The bulbs are arranged in level-wise, levels are numbered from 0,1,2,3..
@@ -41,9 +40,7 @@ Sample Output-2:
 ----------------
 [3, 4, 8]
 */
-public class SP32_Largest_Value_In_Tree_Row {
-    
-}
+
 import java.util.*;
 
 class BinaryTreeNode

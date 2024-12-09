@@ -1,4 +1,3 @@
-package DAA.Day29;
 /* Mr. Dharma is shopping at D-Mart with a basket that has a capacity C. 
 He has a wishlist of N products, where each product has a cost and a quantity. 
 

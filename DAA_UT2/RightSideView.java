@@ -1,4 +1,3 @@
-package DAA.Day23;
 /* Balbir singh is working with Binary Trees.
 The elements of the tree is given in the level order format.
 Balbir is looking the tree from right side. 
@@ -39,8 +38,8 @@ Sample Output-2:
 ----------------
 [3, 4, 2]
 */import java.util.*;
-public class SP33_Right_SideView_of_Tree {
-    class BinaryTreeNode
+
+class BinaryTreeNode
 {
     public int data; 
     public BinaryTreeNode left, right; 
@@ -125,6 +124,6 @@ public class RightSideView
         System.out.println(sol.rightSideView(root));
     }
 }
-}
+
 
 

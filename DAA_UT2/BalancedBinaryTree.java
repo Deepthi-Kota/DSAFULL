@@ -1,4 +1,3 @@
-package DAA.Day22;
 /*Mr. Rishil is interested to work on Data Structures.
 He has constructed a BinaryTree-BT.
 
@@ -41,9 +40,7 @@ Sample Input-2:
 Sample Output-2:
 ----------------
 false */
-public class SP30_Balanced_Binary_Tree {
-    
-}
+
 import java.util.*;
 
 class BinaryTreeNode

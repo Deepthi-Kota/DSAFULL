@@ -1,4 +1,3 @@
-package DAA.Day24;
 /*The Kolar Gold Fields (KGF) is in the form of a m*n grid,
 Each field, contains some amount of Gold in it.
  
@@ -55,7 +54,44 @@ Explanation:
 You can grab the gold in KGF grid as follows:
 You can obtain like as follows: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
  */
-public class SP35_Path_with_Max_Gold {
-    
+
+import java.util.*;
+public class SP35_Path_with_Max_Gold{
+    static int sum = 0;
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] arr = new int[m][n];
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        int maxi = 0;
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                if(arr[i][j]!=0){
+                    boolean[][] vis = new boolean[m][n];
+                    maxi = Math.max(maxi, find(i,j,arr,vis));
+                }
+            }
+        }
+        System.out.println(maxi);
+        sc.close();
+    }
+    static int find(int i, int j, int[][] arr, boolean[][] vis){
+        if(i<0 || i>=arr.length || j<0 || j>=arr[0].length || vis[i][j] || arr[i][j]==0){
+            return 0;
+        }
+        vis[i][j]=true;
+        int g = arr[i][j];
+        int u=find(i-1,j,arr,vis);
+        int d=find(i+1,j,arr,vis);
+        int l=find(i,j-1,arr,vis);
+        int r=find(i,j+1,arr,vis);
+        g+=Math.max(Math.max(l,r),Math.max(u,d));
+        vis[i][j]=false;
+        return g;
+    }
 }
-Class notdone

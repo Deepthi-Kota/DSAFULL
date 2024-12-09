@@ -1,4 +1,3 @@
-package DAA.Day27;
 /* With the growing trend of shorthand writing, 
 people often replace parts of a word with their lengths to create short-forms. 
 A valid short-form can be created by replacing non-overlapping and non-adjacent substrings with their respective lengths.
@@ -35,9 +34,7 @@ cse
 Sample Output-2:
 ----------------
 [1s1, 1se, 2e, 3, c1e, c2, cs1, cse]*/
-public class SP37_Generalized_Abbreviation {
-    
-}
+
 import java.util.*;
 public class GenerateAbbreviations{
     public static void main(String[] args){

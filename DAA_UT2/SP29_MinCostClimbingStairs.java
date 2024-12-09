@@ -1,4 +1,3 @@
-package DAA.Day28;
 /* Pavan is playing a game where there are N levels and each level has some points in it. 
 level[i] is the points to spend on ith level(0-indexed) to move forward. 
 Inorder to win the game he has to reach the top level.

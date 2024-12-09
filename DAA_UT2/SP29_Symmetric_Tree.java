@@ -1,4 +1,3 @@
-package DAA.Day21;
 /* Ramesh is interested to work on Data Structures.
 He has constructed BinaryTree-BT.
 

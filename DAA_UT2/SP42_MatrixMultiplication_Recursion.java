@@ -1,4 +1,3 @@
-package DAA.Day30;
 /*Your are given the sizes of N-1 matrices as a list[] of size N, 
 where the matrix are numbered from 0 to N-2 
 and the matrix size is defined as matrix-i size is list[i]*list[i+1].

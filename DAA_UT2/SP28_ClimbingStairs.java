@@ -1,4 +1,3 @@
-package DAA.Day28;
 /* 
 Sharath is playing a game where he has to cross N levels to win. 
 

@@ -1,4 +1,3 @@
-package DAA.Day30;
 /* You are playing a game. There are N boxes placed in a row (0-indexed), 
 every box has some points. 
 
