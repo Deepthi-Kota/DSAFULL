@@ -1,7 +1,7 @@
-package DP.KanpsackVariation;
+package DP.adithyaVerma.KanpsackVariation;
 //check if subset can form the sum or not
 import java.util.*;
-public class subsetSum {
+public class k1_subsetSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,7 +11,7 @@ public class subsetSum {
             arr[i] = sc.nextInt();
         } 
         System.out.println(find(arr,n-1, sum));
-        boolean[] dp = new boolean[n+1];
+        // boolean[] dp = new boolean[n+1];
         // System.out.println(findmem(arr, n, sum, dp));
         System.out.println(tabu(arr, n, sum));
         sc.close();
