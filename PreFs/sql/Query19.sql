@@ -12,7 +12,7 @@ CustomerID      Name    Email
 
 */
 
-use fs;
+use prefs;
 -- write your query below
 select CustomerID, Name, Email from Customers
 where Email like '%@example.com';

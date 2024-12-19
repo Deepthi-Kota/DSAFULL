@@ -1,4 +1,3 @@
-import java.util.*;
 public class maze1 {
     public static void main(String[] args) {
         boolean[][] board = {

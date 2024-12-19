@@ -15,7 +15,7 @@ OrderID  CustomerID      OrderMonth     OrderYear
 
 */
 
-use fs;
+use prefs;
 -- write your query below
 select OrderID, CustomerID, month(OrderDate) as OrderMonth, year(OrderDate) as OrderYear from Orders;
 

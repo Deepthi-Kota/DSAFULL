@@ -13,8 +13,21 @@ OrderID Name       Quantity        UnitPrice
 
 */
 
-use fs;
--- write your query below
-select o.OrderID, p.Name, o1.Quantity, p.Price as UnitPrice
-from Orders o, OrderItems o1, Products p
-where p.ProductID = o1.productID and o1.orderID = o.OrderID and o.Status = 'Cancelled';
+-- use fs;
+-- -- write your query below
+-- select o.OrderID, p.Name, o1.Quantity, p.Price as UnitPrice
+-- from Orders o, OrderItems o1, Products p
+-- where p.ProductID = o1.productID and o1.orderID = o.OrderID and o.Status = 'Cancelled';
+
+
+
+
+
+
+
+
+use prefs;
+select o.orderID, p.Name, oi.Quantity, oi,UnitPrice
+from orders o, products p, orderItems oi
+where p.ProductID = oi.ProductID and o.OrderID = oi.OrderID
+where o.status = "cancelled";

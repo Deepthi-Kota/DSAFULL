@@ -18,11 +18,28 @@ OrderID  OrderID  HoursDifference
 */
 
 -- write your query below
-use fs;
--- write your query below
-select o1.OrderID, o2.orderID, abs(timestampdiff(hour,o1.Orderdate, o2.orderdate)) as HoursDifference
-from Orders o1 join Orders o2
-on o1.CustomerID = o2.CustomerID
-where o1.orderID < o2.orderID
-order by o1.CustomerID, HoursDifference;
+-- use fs;
+-- -- write your query below
+-- select o1.OrderID, o2.orderID, abs(timestampdiff(hour,o1.Orderdate, o2.orderdate)) as HoursDifference
+-- from Orders o1 join Orders o2
+-- on o1.CustomerID = o2.CustomerID
+-- where o1.orderID < o2.orderID
+-- order by o1.CustomerID, HoursDifference;
 
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select o1.orderid, o2.orderid, TIMESTAMPDIFF(hour,o1.orderdate,o2.orderdate) as HoursDifference
+from orders o1
+join orders o2
+on o1.CustomerID=o2.CustomerID
+and o1.orderdate<o2.OrderDate
+order by o1.CustomerID, HoursDifference; 

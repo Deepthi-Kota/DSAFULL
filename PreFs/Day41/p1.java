@@ -1,4 +1,5 @@
 package PreFs.Day41;
+//299
 /*
 Ramesh and Suresh are playing a game.
 Initially, Ramesh has a secret number, and Suresh has to guess that number.
@@ -53,6 +54,41 @@ Explanation:
 The 1st 1 in Suresh guess is an Apple, the 2nd or 3rd 1 is B.
 
 */
-public class p1 {
-    
+
+import java.util.*;
+public class p1{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String[] s = sc.nextLine().split(" ");
+        String num = s[0];
+        String guess = s[1];
+        int apple = 0;
+        int banana = 0;
+        boolean[] vis = new boolean[num.length()];
+        for(int i=0; i<num.length(); i++){
+            if(num.charAt(i)== guess.charAt(i)){
+                // System.out.println(i+" "+"apple");
+                apple++;
+                vis[i] = true;
+            }
+            
+            // System.out.println(Arrays.toString(vis));
+            // System.out.println("in loop");
+        }
+        for (int i = 0; i < guess.length(); i++) {
+            if (num.charAt(i) == guess.charAt(i)) continue;
+
+            for (int j = 0; j < num.length(); j++) {
+                if (!vis[j] && num.charAt(j) == guess.charAt(i)) {
+                    banana++;
+                    vis[j] = true; 
+                    break; 
+                }
+            }
+        }
+
+        String ans = apple + "A" + banana + "B";
+        System.out.println(ans);
+        sc.close();
+    }
 }

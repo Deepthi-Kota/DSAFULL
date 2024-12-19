@@ -11,8 +11,28 @@ CustomerID      Name
 
 */
 
-use fs;
--- write your query below
-select CustomerID, Name from Customers 
-where CustomerID not in (select CustomerID from Orders);
+-- use fs;
+-- -- write your query below
+-- select CustomerID, Name from Customers 
+-- where CustomerID not in (select CustomerID from Orders);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select CustomerID, Name from customers
+where CustomerID not in(select CustomerID from orders);

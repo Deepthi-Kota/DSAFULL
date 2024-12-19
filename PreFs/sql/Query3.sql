@@ -9,8 +9,39 @@ ProductID       Name
 103            Headphones  
 */
 
-use fs;
--- write your query below
+-- use fs;
+-- -- write your query below
+-- select p.ProductID, p.Name 
+-- from Products p
+-- where p.ProductID not in(select ProductID from OrderItems);
+
+use prefs;
 select p.ProductID, p.Name 
-from Products p
-where p.ProductID not in(select ProductID from OrderItems);
+from products p
+where p.ProductID not in (select ProductID from orderitems)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

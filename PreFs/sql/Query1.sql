@@ -12,9 +12,11 @@ OrderID CustomerName    Email                       OrderDate   TotalCost   Stat
 
 */
 
-use fs;
+use prefs;
 
 -- write your query below
 select o.OrderID, c.Name as CustomerName, c.Email, o.OrderDate, o.TotalCost, o.Status 
 from Orders o, Customers c
 where o.CustomerID=c.CustomerID;
+
+

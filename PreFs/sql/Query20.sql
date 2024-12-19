@@ -14,7 +14,37 @@ sivaD eilrahC   example.com
 
 */
 
-use fs;
--- write your query below
-select reverse(Name) as ReversedName, substring(Email, locate('@',Email)+1) as EmailDomain from Customers;
+-- use fs;
+-- -- write your query below
+-- select reverse(Name) as ReversedName, substring(Email, locate('@',Email)+1) as EmailDomain from Customers;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select REVERSE(name) as ReversedName, substring_index(email,'@',-1) as EmailDomain from customers;

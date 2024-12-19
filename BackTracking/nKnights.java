@@ -5,6 +5,7 @@ public class nKnights {
         int n = sc.nextInt();
         boolean[][] placed = new boolean[n][n];
         check(0,0,n,placed);
+        sc.close();
         
     }
     static void check(int row, int col, int n, boolean[][] arr){

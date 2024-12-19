@@ -1,4 +1,5 @@
 package PreFs.Day35;
+//254
 /* Ms Manasa is working on numbers; she is fascinated by number factors.
 She is given a number N, she wants to find out all possible ways of 
 obtaining N as multiple of its factors.
@@ -54,6 +55,7 @@ public class p1{
         call(2,n,new ArrayList<>(),ans);
         ans.remove(ans.size()-1);
         System.out.println(ans);
+        sc.close();
     }
     static void call(int s, int n, List<Integer> list, List<List<Integer>> ans){
         if(n==1){

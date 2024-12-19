@@ -16,6 +16,6 @@ OrderID   CustomerID   OrderDate       DaysSinceOrder
 
 */
 
-use fs;
+use prefs;
 -- write your query below
 select OrderID, CustomerID, OrderDate, datediff('2024-10-30', OrderDate) as DaysSinceOrder from Orders;

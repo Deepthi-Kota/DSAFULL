@@ -1,4 +1,5 @@
 package PreFs.Day32;
+//1079
 /* There are some cubes, and each cube has an alphabet (from A to Z) 
 printed on it. You can construct different, non-empty words using these 
 cubes and each of the word length should be 0 < length <= number of cubes.

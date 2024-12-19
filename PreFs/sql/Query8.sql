@@ -13,8 +13,32 @@ OrderID   CustomerID      OrderDate       TotalCost
 
 */
 
-use fs;
--- write your query below
-select OrderID, CustomerID, OrderDate, TotalCost from Orders o
-where (CustomerID, OrderDate) in (select CustomerID,MAX(OrderDate) from Orders group by CustomerID);
+-- use fs;
+-- -- write your query below
+-- select OrderID, CustomerID, OrderDate, TotalCost from Orders o
+-- where (CustomerID, OrderDate) in (select CustomerID,MAX(OrderDate) from Orders group by CustomerID);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select OrderID, CustomerID, OrderDate, TotalCost
+from orders 
+where (CustomerID,orderdate) in (select CustomerID,MAX(orderDate) from orders group by CustomerID);

@@ -14,7 +14,20 @@ OrderID  CustomerID  OrderDate       WeeksSinceOrder
 
 */
 
-use fs;
--- write your query below
-select OrderID, CustomerID, OrderDate, ceil(datediff('2024-10-30', OrderDate)/7) as WeeksSinceOrder from Orders;
+-- use fs;
+-- -- write your query below
+-- select OrderID, CustomerID, OrderDate, ceil(datediff('2024-10-30', OrderDate)/7) as WeeksSinceOrder from Orders;
 
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select orderid, customerid, orderdate, week('2024-10-30')-week(orderdate) as WeeksSinceOrder from orders

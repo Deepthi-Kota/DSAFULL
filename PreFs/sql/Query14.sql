@@ -14,8 +14,12 @@ OrderID  CustomerID   OrderDate
 
 */
 
-use fs;
--- write your query below
-select OrderID, CustomerID, OrderDate 
-from Orders
-where orderDate between '2024-10-01' and '2024-10-30';
+-- use fs;
+-- -- write your query below
+-- select OrderID, CustomerID, OrderDate 
+-- from Orders
+-- where orderDate between '2024-10-01' and '2024-10-30';
+
+use prefs;
+select orderId, customerid, orderdate from orders
+where Month(orderdate)=10 and year(orderdate)=2024

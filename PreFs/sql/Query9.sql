@@ -10,8 +10,28 @@ Month      MonthlySales
 
 */
 
-use fs;
--- write your query below
-select concat(year(OrderDate) , '-', Month(OrderDate)) as Month, sum(TotalCost) as MonthlySales from Orders
-group by Month;
+-- use fs;
+-- -- write your query below
+-- select concat(year(OrderDate) , '-', Month(OrderDate)) as Month, sum(TotalCost) as MonthlySales from Orders
+-- group by Month;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select concat(YEAR(OrderDate),'-',Month(orderDate)) as Month, Round(sum(TotalCost)) as MonthlySales
+from orders
+group by Month;

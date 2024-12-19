@@ -11,9 +11,13 @@ OrderID  CustomerID   OrderDate
                                                                                               
 */
 
-use fs;
--- write your query below
-select OrderId, CustomerID, OrderDate 
-from Orders
-where dayname(OrderDate) in ('Saturday','Sunday');
+-- use fs;
+-- -- write your query below
+-- select OrderId, CustomerID, OrderDate 
+-- from Orders
+-- where dayname(OrderDate) in ('Saturday','Sunday');
 
+
+use prefs;
+select orderId, customerid, orderdate from orders
+where dayname(orderdate) in ('saturday','sunday');

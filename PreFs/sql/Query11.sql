@@ -13,8 +13,30 @@ OrderID  CustomerID      OrderDate       TotalCost
 
 */
 
-use fs;
--- write your query below
-SELECT OrderID, CustomerID, OrderDate, TotalCost
-FROM Orders
-WHERE DATEDIFF('2024-10-30', OrderDate)<=20;
+-- use fs;
+-- -- write your query below
+-- SELECT OrderID, CustomerID, OrderDate, TotalCost
+-- FROM Orders
+-- WHERE DATEDIFF('2024-10-30', OrderDate)<=20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use prefs;
+select orderID, CustomerID, OrderDate, TotalCost
+from orders
+where Datediff('2024-10-30',OrderDate)<=20

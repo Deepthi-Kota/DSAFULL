@@ -1,4 +1,5 @@
 package PreFs.Day32;
+//693
 /*Vihan is given a number N and He wants to check whether N is a converse number
 or not. The binary form of number N is said to be converse number, if it obeys 
 the following property: "every pair of adjacent digits are different". 

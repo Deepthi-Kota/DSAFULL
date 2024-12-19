@@ -11,11 +11,20 @@ George Clark    1200.00
 
 */
 
-use fs;
--- write your query below
+-- use fs;
+-- -- write your query below
+-- select c.Name, sum(o.TotalCost) as TotalSpent 
+-- from Customers c, Orders o
+-- where c.CustomerID=o.CustomerID
+-- group by c.CustomerID
+-- order by TotalSpent desc
+-- limit 3;
+
+use prefs;
 select c.Name, sum(o.TotalCost) as TotalSpent 
-from Customers c, Orders o
-where c.CustomerID=o.CustomerID
+from customers c
+join Orders o
+on c.CustomerID = o.CustomerID
 group by c.CustomerID
 order by TotalSpent desc
 limit 3;

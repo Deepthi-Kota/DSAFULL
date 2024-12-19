@@ -1,4 +1,5 @@
 package PreFs.Day36;
+//1268 find and replace in string
 /* Mr Ajay Sharma is working woth words.
 He found that few words in the langugage have same meaning.
 Such words are given as a list of pairs as mappedpairs[],

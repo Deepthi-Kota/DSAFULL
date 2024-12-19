@@ -70,7 +70,6 @@ public class p3{
                 arr[i][j]=sc.nextInt();
             }
         }
-        int[] related = new int[n];
         ArrayList<Integer>[] adj = new ArrayList[n];
         for(int i=0; i<n; i++){
             adj[i]=new ArrayList<>();
@@ -90,6 +89,7 @@ public class p3{
             }
         }
         System.out.println(c);
+        sc.close();
     }
     static void find(ArrayList<Integer>[] arr, boolean[] vis, int start){
         Queue<Integer> q = new LinkedList<>();

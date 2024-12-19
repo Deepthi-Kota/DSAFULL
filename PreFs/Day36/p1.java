@@ -1,4 +1,5 @@
 package PreFs.Day36;
+//565
 /* 
 There are N rooms in a row, and all the rooms are locked initially.
 You will be provided the master key. You can use the master key only once, and

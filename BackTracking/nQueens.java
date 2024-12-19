@@ -9,6 +9,7 @@ public class nQueens {
         int[][] arr2 = new int[n][n];
         boolean[][] placed2 = new boolean[n][n];
         System.out.println(counter(n,0,placed2,arr2));
+        sc.close();
     }
     
     static boolean check(int n, int row, boolean[][] placed, int[][] arr){

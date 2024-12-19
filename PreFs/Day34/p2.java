@@ -1,4 +1,5 @@
 package PreFs.Day34;
+//1593
 /* Mr Parandhamayya working with words.
 He is given a word W, you need to divide the word into N non-empty parts, 
 such that all the newly formed words should be distinct, and 

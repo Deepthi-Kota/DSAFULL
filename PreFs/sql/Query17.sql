@@ -17,8 +17,16 @@ OrderID  OrderID  DaysDifference
 
 */
 
-use fs;
--- write your query below
-select o1.OrderID, o2.OrderID, timestampdiff(day, o1.OrderDate, o2.OrderDate) as DaysDifference from Orders o1, Orders o2
-where o1.customerID=o2.customerID and o1.OrderID < o2.OrderID
-order by o1.CustomerID,DaysDifference;
+-- use fs;
+-- -- write your query below
+-- select o1.OrderID, o2.OrderID, timestampdiff(day, o1.OrderDate, o2.OrderDate) as DaysDifference from Orders o1, Orders o2
+-- where o1.customerID=o2.customerID and o1.OrderID < o2.OrderID
+-- order by o1.CustomerID,DaysDifference;
+
+
+use prefs;
+select o1.orderId, o2.orderid, datediff(o2.orderdate,o1.orderdate) as DaysDifference
+from orders o1
+join orders o2
+on o1.CustomerID=o2.CustomerID and o1.OrderID<o2.OrderID
+order by o1.CustomerID, DaysDifference

@@ -11,7 +11,12 @@ Alice Johnson   alice.johnson@example.com
 Bob Smith       bob.smith@example.com 
 */
 
-use fs;
--- write your query below
-select Name, Email from Customers 
-where CustomerID in (select CustomerID from Orders group by CustomerID having count(*)>2);
+-- use fs;
+-- -- write your query below
+-- select Name, Email from Customers 
+-- where CustomerID in (select CustomerID from Orders group by CustomerID having count(*)>2);
+
+
+use prefs;
+select c.Name, c.Email FROM customers c
+where c.customerID in (select customerID from orders group by CustomerID having count(*)>2)
